@@ -1,3 +1,11 @@
+//Exercise 6
+function viewPort(){
+    console.clear();
+    console.log("Viewport Width: " + document.documentElement.clientWidth);
+    console.log("Viewport Height: " + document.documentElement.clientHeight);
+}
+window.addEventListener('resize', viewPort);
+
 //Exercise 1 - Changes the paragraph
 let paragraph = document.getElementsByTagName("p")[0];
 let btn = document.getElementById("btn");
@@ -40,3 +48,10 @@ let listener2 = function addRow() {
 
 }
 btnAddRow.addEventListener('click', listener2);
+
+let btnRmvRow = document.getElementById("removeRow");
+let listener3 = function rmvRow() {
+    document.getElementById("table").deleteRow(0);
+}
+btnRmvRow.addEventListener('click', listener3);
+
