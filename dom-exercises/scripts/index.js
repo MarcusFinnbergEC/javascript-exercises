@@ -55,3 +55,10 @@ let listener3 = function rmvRow() {
 }
 btnRmvRow.addEventListener('click', listener3);
 
+//Exercise 7
+let input = document.getElementById("input");
+console.log("Input value: " + input.value);
+function keyDowned(){
+    console.log("Input value: " + input.value);
+}
+window.addEventListener('keydown', keyDowned);
